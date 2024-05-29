@@ -101,7 +101,7 @@ while keys != 3:
                 exit()
         print("You got a key")
         keys = +1
-    if turns => 0:
+    if turns >= 0:
         print(Fore.WHITE + "Ending 3/5 died by getting trap and the area transforming into Hell.")
         time.sleep(2)
         exit()
