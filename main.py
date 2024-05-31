@@ -1,4 +1,3 @@
-#Code
 import random
 import colorama
 from colorama import Fore, Back
@@ -49,7 +48,6 @@ while keys != 3:
         lives = 3
         while choice1 != random.randrange(1,3):
             lives = -1
-            print("Wrong")
             choice1 = int(input("You have ", lives, " left hurry one already died. "))
             if lives <= 0:
                 friends = +1
@@ -67,7 +65,6 @@ while keys != 3:
         while guess != "a map" or "A map" or "A Map":
             lives = -1
             friends = +1
-            print("Wrong")
             guess = input("'I have cities, but no houses; I have mountains, but no trees; I have water, but no fish; I have roads, but no cars. What am I?' ")
             if lives <= 0:
                 print(Fore.WHITE + "Ending 2/5 died by trying to collect a key.")
@@ -78,7 +75,6 @@ while keys != 3:
         while guess != "Time":
             lives = -1
             friends = +1
-            print("Wrong")
             guess = input("'I exist always, but have no form. I am perceived by all, but have no voice. I have no beginning and no end, yet I shape the course of everything. What am I?' ")
             if lives <= 0:
                 print(Fore.WHITE + "Ending 2/5 died by trying to collect a key.")
@@ -93,7 +89,6 @@ while keys != 3:
         while guess != "The United Kingdom And Northern Ireland" or "the united kingdom and northern ireland":
             lives = -1
             friends = +1
-            print("Wrong")
             guess = input("oladneriidhtonatrenneketnnuhmigdrd ")
             if lives <= 0:
                 print(Fore.WHITE + "Ending 2/5 died by trying to collect a key.")
@@ -101,7 +96,7 @@ while keys != 3:
                 exit()
         print("You got a key")
         keys = +1
-    if turns >= 0:
+    if turns <= 0:
         print(Fore.WHITE + "Ending 3/5 died by getting trap and the area transforming into Hell.")
         time.sleep(2)
         exit()
